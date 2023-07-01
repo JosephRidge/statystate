@@ -1,11 +1,11 @@
-class quote {
-  String anime;
-  String character;
-  String quote;
+class Quote {
+  String? anime;
+  String? character;
+  String? quote;
 
-  quote({this.anime, this.character, this.quote});
+  Quote({ this.anime, this.character, this.quote});
 
-  quote.fromJson(Map<String, dynamic> json) {
+  Quote.fromJson(Map<String, dynamic> json) {
     anime = json['anime'];
     character = json['character'];
     quote = json['quote'];
